@@ -1,0 +1,1 @@
+This project is one such that we are creating a recipe website. It will have various changes in the future when we get better at HTML/CSS.
