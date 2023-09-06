@@ -1,17 +1,45 @@
+:root{
+    --accent1: #dcedc2;
+    --background: #ffd3b5;
+    --accent2: #ffaaa6;
+    --contrast: #ff8c94;
+}
+
 *{
     font-family: serif;
     font-size: 20px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+nav{
+    height: 40px;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--accent1);
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    padding: 20px;
+}
+
+nav a{
+    float: right;
+    font-size: 24px;
 }
 
 body{
-    background-color: pink;
+    background-color: var(--background);
 }
 
+main{
+    margin-top: 80px;
+}
 h1{
     font-variant: small-caps;
     font-size: 56px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: auto;
     text-align: center;
 }
 
@@ -19,7 +47,7 @@ h1{
 header{
     width: 100%;
     height: 100px;
-    background-color: salmon;
+    background-color: var(--accent2);
     padding: 0;
 }
 
@@ -39,8 +67,8 @@ header{
     width: 30%;
     align: center;
     text-align: center;
-    border: 2px solid salmon;
-    background-color: coral;
+    border: 2px solid var(--accent1);
+    background-color: var(--accent1);
     padding-top: 4px;
     padding-bottom: 2px;
     color: black;
@@ -61,7 +89,7 @@ header{
     height: auto;
     padding-top: 2px;
     margin-bottom: 3%;
-    box-shadow: 4px 4px 4px brown;
+    box-shadow: 4px 4px 4px var(--contrast);
 }
 
 .recipe-image{
@@ -73,7 +101,9 @@ h3{
     font-size: 28px;
     font-variant: small-caps;
     text-align: center;
-    border: 2px solid brown;
+    border: 2px solid var(--contrast);
+    border-radius: 15%;
+    background-color: var(--contrast)
 }
 
 p{
